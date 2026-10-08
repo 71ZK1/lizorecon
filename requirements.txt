@@ -1,0 +1,31 @@
+# lizorecon requirements
+#
+# All tools below are Go-based and installed via `install.sh` (go install).
+# This file exists as a reference — there is no pip/npm dependency, since
+# every tool here is a standalone Go binary. Go 1.21+ and git are required
+# on the host machine.
+#
+# format: tool_name = source_repo
+
+# --- Core (required for lizorecon.sh to do anything meaningful) ---
+subfinder     = github.com/projectdiscovery/subfinder
+httpx         = github.com/projectdiscovery/httpx
+katana        = github.com/projectdiscovery/katana
+nuclei        = github.com/projectdiscovery/nuclei
+
+# --- Recommended (optional — script auto-skips if missing) ---
+dnsx          = github.com/projectdiscovery/dnsx
+naabu         = github.com/projectdiscovery/naabu
+assetfinder   = github.com/tomnomnom/assetfinder
+amass         = github.com/owasp-amass/amass
+gau           = github.com/lc/gau
+waybackurls   = github.com/tomnomnom/waybackurls
+gf            = github.com/tomnomnom/gf
+gf-patterns   = github.com/1ndianl33t/Gf-Patterns   (cloned into ~/.gf, not go-installed)
+dalfox        = github.com/hahwul/dalfox
+gowitness     = github.com/sensepost/gowitness
+anew          = github.com/tomnomnom/anew
+
+# --- System dependencies ---
+go            >= 1.21   (https://go.dev/doc/install)
+git
