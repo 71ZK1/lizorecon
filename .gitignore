@@ -1,0 +1,10 @@
+# recon output — never commit scan results
+lizorecon-results/
+*.txt
+!requirements.txt
+
+# OS / editor cruft
+.DS_Store
+*.swp
+.vscode/
+.idea/
